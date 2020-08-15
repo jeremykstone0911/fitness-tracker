@@ -1,6 +1,5 @@
-// Require mongoose to create the schema
+// Require mongoose to create schema
 const mongoose = require("mongoose");
-// Require Schema from mongoose
 const Schema = mongoose.Schema;
 
 // Define the workout Schema
@@ -8,7 +7,10 @@ const Schema = mongoose.Schema;
 // Array of exercises with type, name, duration, weight, reps, sets, distance
 // Total Duration
 const workoutSchema = new Schema({
-  day: { type: Date, default: Date.now },
+  day: {
+    type: Date,
+    default: Date.now,
+  },
   exercises: [
     {
       type: { type: String, required: true },
@@ -20,10 +22,9 @@ const workoutSchema = new Schema({
       distance: { type: Number, required: false },
     },
   ],
-  totalDuration: Number,
 });
 
-// Define workout as a mongoose model
+//Mongoose model that will be called with const Workout
 const Workout = mongoose.model("Workout", workoutSchema);
 // Export Workout
 module.exports = Workout;

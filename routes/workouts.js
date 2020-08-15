@@ -5,7 +5,7 @@ const router = require("express").Router();
 // GET Get All workouts
 // Get all the workouts from the database
 // Loop over them and calculate the total Duration
-//   Send all the workouts as json
+//   Send all workouts as json
 router.get("/", (req, res, next) => {
   Workout.find({})
     .then((workouts) => {

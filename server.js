@@ -32,7 +32,7 @@ app.use("/api/workouts", require("./routes/workouts.js"));
 app.get("/exercise", (req, res, next) => {
   res.sendFile(path.join(__dirname, "./public/exercise.html"));
 });
-// Send hte stats html file
+// Send the stats html file
 app.get("/stats", (req, res, next) => {
   res.sendFile(path.join(__dirname, "./public/stats.html"));
 });

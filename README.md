@@ -1,6 +1,6 @@
 # Fitness Tracker
 
-This application allows the user to create and track their workouts. They can keep track of multiple exercises in a workout. The user has the option to record either a resistance or cardio exercise. A resistance exercise will contain the following information: name, weight, sets, reps and duration, while a cardio exercise has name, duration and distance traveled.
+This application allows the user to create and track the multiple individual exercise details completed during their workouts. The exercises are categorized as either resistance or cardio exercise. A resistance exercise will contain the following information: name, weight, sets, reps and duration, while a cardio exercise has name, duration and distance traveled.
 
 ### Tech Stack
 
@@ -20,4 +20,3 @@ The following npm packages are dependencies:
 2. Choose between updating the most recent workout and creating a new workout
 3. View stats for all the workouts
 4. Return back to the home to continue adding workouts
-
