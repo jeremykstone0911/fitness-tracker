@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 // Require path to make the absolute path relative
 const path = require("path");
 
+var MONGODB_URI = process.env.MONGODB_URI;
 // Connect to the database in MongoDB with the specified conditions
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker",
@@ -15,6 +16,9 @@ mongoose.connect(
     useCreateIndex: true,
   }
 );
+
+//Connect to the Mongo DB
+mongoose.connect(MONGODB_URI);
 
 // Setting up the express app
 const app = express();
